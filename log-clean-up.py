@@ -2,7 +2,7 @@ import shutil    # For CopyFile
 import os        # For GetFileSize  and  Check If File exist
 import sys       # For CLI  Arguments
 
-# lesson-4-putgelog.py  mylog.txt  10  5
+# file_name  mylog.txt  10  5
 
 if(len(sys.argv) < 4):
     print("Missing arguments!  Usage is script.py  mylog.txt 10  5")
