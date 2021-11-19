@@ -38,7 +38,6 @@ def delete_empty_dir(folder):
     if empty_folders_in_this_run > 0:
         delete_empty_dir(folder)
 
-#=====================MAIN==============================
 starttime = time.asctime()
 
 for folder in FOLDERS:
@@ -47,10 +46,8 @@ for folder in FOLDERS:
 
 finishtime = time.asctime()
 
-print("-----------------------------------------------------")
 print("START TIME: "                  + str(starttime))
 print("Total Deleted Size : "         + str(int(TOTAL_DELETED_SIZE/1024/1024)) + "MB")
 print("Total Deleted files: "         + str(TOTAL_DELETED_FILE))
 print("Total Deleted Empty folders: " + str(TOTAL_DELETED_DIRS))
 print("FINISH TIME: "                 + str(finishtime))
-print("-------------------EOF-------------------------------")
